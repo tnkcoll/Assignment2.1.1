@@ -5,11 +5,7 @@
         static void Main(string[] args)
         {
             Student student1 = new Student();
-            //student1.StudentId = 1;
-            //student1.StudentFName = "Ted";
-            //student1.StudentLName = "Collins";
-            //student1.StudentGrade = 'A';
-            
+                        
             Console.WriteLine("Please enter the new student's ID number.");
             student1.StudentId = Convert.ToInt32(Console.ReadLine());
 
