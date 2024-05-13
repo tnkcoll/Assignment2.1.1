@@ -5,10 +5,23 @@
         static void Main(string[] args)
         {
             Student student1 = new Student();
-            student1.StudentId = 1;
-            student1.StudentFName = "Ted";
-            student1.StudentLName = "Collins";
-            student1.StudentGrade = 'A';
+            //student1.StudentId = 1;
+            //student1.StudentFName = "Ted";
+            //student1.StudentLName = "Collins";
+            //student1.StudentGrade = 'A';
+            
+            Console.WriteLine("Please enter the new student's ID number.");
+            student1.StudentId = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Please enter the new student's first name.");
+            student1.StudentFName = Console.ReadLine();
+
+            Console.WriteLine("Please enter the new student's last name.");
+            student1.StudentLName = Console.ReadLine();
+
+            Console.WriteLine("Please enter the new student's grade.");
+            student1.StudentGrade = Convert.ToChar(Console.ReadLine());
+
 
             Console.WriteLine("Student's ID number is " + student1.StudentId);
             Console.WriteLine("Student's first name is " + student1.StudentFName);
